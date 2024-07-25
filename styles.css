@@ -1,0 +1,66 @@
+
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 40%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 40px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+.page-form__input {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+input[aria-invalid="true"] {
+    background-color: #EA7A85;
+}
+
+.input__error {
+    position: relative;
+    top: -25px;
+    color: #EA7A85;
+}
+
+.page-form__button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.reg-text {
+    font-size: 20px;
+}
+
+.form__error {
+    border-radius: 4px;
+    padding: 10px;
+    border: 2px #EA7A85 solid;
+    color: #EA7A85;
+    margin-bottom: 20px;
+}
