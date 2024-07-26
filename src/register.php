@@ -65,11 +65,8 @@ $pdo = getPDO();
 
 $query = "INSERT INTO users (login, email, phone, password) VALUES (?,?,?,?)";
 $stmt = $pdo->prepare($query);
-try {
-    $stmt->execute([$login, $email, $phone, password_hash($password, PASSWORD_DEFAULT)]);
-} catch (\Exception $e) {
-    die($e->getMessage());
-}
+$stmt->execute([$login, $email, $phone, password_hash($password, PASSWORD_DEFAULT)]);
+
 
 redirect('/auth.php');
 
