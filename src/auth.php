@@ -39,5 +39,3 @@ $_SESSION['user']['id'] = $user['id'];
 
 redirect('/index.php');
 
-
-print_r($user);
